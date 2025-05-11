@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج تسجيل سباقات الوطن التمهيدية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- مكتبة Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: linear-gradient(rgb(44 62 80 / 0%), rgb(44 62 80 / 58%)), url(images/img5.jpg) center / cover no-repeat fixed;
+            min-height: 100vh;
+        }
+
+        .registration-container {
+            background: rgba(15, 15, 15, 0.95);
+            border-radius: 18px;
+            max-width: 630px;
+            margin: 40px auto;
+            padding: 36px 28px 30px 28px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            color: #fff;
+        }
+
+        .registration-container h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 18px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        form {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .form-label {
+            color: #ffffff;
+            font-size: 0.94rem;
+            margin-bottom: 2px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .form-control,
+        .form-select {
+            background: #222;
+            color: #fff;
+            border-radius: 8px;
+            border: 1px solid #444;
+            margin-bottom: 14px;
+
+        }
+
+        .form-control::placeholder {
+            color: #bbb;
+            opacity: 1;
+        }
+
+        .form-text {
+            color: #aaa;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .btn-primary {
+            background: #f2c228;
+            color: #222;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            padding: 12px 0;
+            font-size: 1.12rem;
+        }
+
+        .btn-primary:hover {
+            background: #ffe066;
+            color: #111;
+        }
+
+        .custom-file-label {
+            color: #f2c228;
+        }
+    </style>
+    <style>
+        .contact-card a:hover {
+            background: #f2c228 !important;
+            color: #222 !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="نادي الوطن" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competitionList.html">قائمة المسابقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">المقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#races">عن نادي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">أنشطة ومهرجانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleLanguage()">EN</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="btn btn-warning text-white me-3" style="font-size: 12px;">
+                        تسجيل في المهرجان
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div class="registration-container">
+                    <h2>نموذج تسجيل سباقات الوطن التمهيدية</h2>
+                    <form>
+                        <!-- اسم مالك الجواد -->
+                        <label class="form-label" for="ownerName">اسم مالك الجواد *</label>
+                        <input type="text" class="form-control" id="ownerName" placeholder="ادخل اسم مالك الجواد هنا"
+                            required>
+                        <!-- رقم الهاتف -->
+                        <label class="form-label" for="ownerPhone">رقم الهاتف *</label>
+                        <input type="tel" class="form-control" id="ownerPhone" placeholder="مثال: 09100000" required>
+                        <div class="form-text">Example: 09100000</div>
+                        <!-- اسم الجواد -->
+                        <label class="form-label" for="horseName">اسم الجواد *</label>
+                        <input type="text" class="form-control" id="horseName" placeholder="ادخل اسم الجواد هنا"
+                            required>
+                        <!-- اسم اب الجواد -->
+                        <label class="form-label" for="horseFather">اسم اب الجواد</label>
+                        <input type="text" class="form-control" id="horseFather" placeholder="اسم اب الجواد">
+                        <!-- اسم ام الجواد -->
+                        <label class="form-label" for="horseMother">اسم ام الجواد</label>
+                        <input type="text" class="form-control" id="horseMother" placeholder="اسم ام الجواد">
+                        <!-- عمر الجواد -->
+                        <label class="form-label" for="horseAge">عمر الجواد *</label>
+                        <select class="form-select" id="horseAge" required>
+                            <option value="">اختار عمر الجواد</option>
+                            <option>سنة</option>
+                            <option>سنتان</option>
+                            <option>ثلاث سنوات</option>
+                            <option>أربع سنوات</option>
+                            <option>أكثر من أربع سنوات</option>
+                        </select>
+                        <!-- جنس الجواد -->
+                        <label class="form-label" for="horseGender">جنس الجواد *</label>
+                        <select class="form-select" id="horseGender" required>
+                            <option value="">اختار الجنس</option>
+                            <option>ذكر</option>
+                            <option>أنثى</option>
+                        </select>
+                        <!-- سلالة الجواد -->
+                        <label class="form-label" for="horseBreed">سلالة الجواد *</label>
+                        <select class="form-select" id="horseBreed" required>
+                            <option value="">اختار سلالة الجواد</option>
+                            <option>عربي أصيل</option>
+                            <option>مهجن</option>
+                            <option>محلي</option>
+                        </select>
+                        <!-- لون الجواد -->
+                        <label class="form-label" for="horseColor">لون الجواد *</label>
+                        <select class="form-select" id="horseColor" required>
+                            <option value="">اختار لون الجواد</option>
+                            <option>أبيض</option>
+                            <option>أسود</option>
+                            <option>أشقر</option>
+                            <option>أحمر</option>
+                            <option>رمادي</option>
+                            <option>بني</option>
+                        </select>
+                        <!-- المسافة المفضلة -->
+                        <label class="form-label" for="preferredDistance">المسافة المفضلة *</label>
+                        <select class="form-select" id="preferredDistance" required>
+                            <option value="">اختر المسافة المفضلة</option>
+                            <option>1000 متر</option>
+                            <option>1200 متر</option>
+                            <option>1400 متر</option>
+                            <option>1600 متر</option>
+                            <option>1800 متر</option>
+                            <option>2000 متر</option>
+                        </select>
+                        <!-- المنطقة الجغرافية -->
+                        <label class="form-label" for="region">المنطقة الجغرافية *</label>
+                        <select class="form-select" id="region" required>
+                            <option value="">اختر المنطقة الجغرافية</option>
+                            <option>بنغازي</option>
+                            <option>طرابلس</option>
+                            <option>مصراتة</option>
+                            <option>سبها</option>
+                            <option>البيضاء</option>
+                            <option>زليتن</option>
+                            <option>مناطق أخرى</option>
+                        </select>
+                        <!-- رفع اثبات هوية الجواد -->
+                        <label class="form-label" for="horseIdFile"> رفع صورة جواز سفر الجواد رفع اثبات هوية
+                            الجواد/مستند ثبوتية</label>
+                        <input type="file" class="form-control" id="horseIdFile" accept="image/*,.pdf">
+
+                        <!-- زر التسجيل -->
+                        <button type="submit" class="btn btn-primary w-100 mt-2">سجل الآن</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5 d-flex align-items-stretch" style="margin-top: 86px;">
+                <div class="contact-card w-100 h-100 d-flex flex-column justify-content-between p-4"
+                    style="background: linear-gradient(135deg, #171b22 85%, #1a2233 100%); border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+                    <!-- Header -->
+                    <div>
+                        <div class="mb-3 mt-3 text-center">
+                            <img src="images/logo.png" alt="نادي الوطن" style="height:120px;">
+                        </div>
+                        <h2 class="text-center mb-2"
+                            style="color:#f2c228; font-weight:bold; font-size:1.7rem; letter-spacing:1px;">تواصل معنا
+                        </h2>
+                        <p class="text-center mb-4" style="color:#b7b7b7; font-size:1.1rem;">سجل معنا الآن في عالم
+                            الفروسية وكن جزءًا من النجاح</p>
+                        <!-- Contact Info -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex align-items-center bg-dark rounded-3 p-3" style="gap:15px;">
+                                <span class="d-flex align-items-center justify-content-center rounded-circle"
+                                    style="background:#f2c22820; width:48px; height:48px;">
+                                    <i class="fas fa-map-marker-alt" style="color:#f2c228; font-size:1.5rem;"></i>
+                                </span>
+                                <div>
+                                    <div style="color:#f2c228; font-weight:600;">العنوان</div>
+                                    <div style="color:#e0e0e0; font-size:0.97rem;">بنغازي - ليبيا (فنيشيا)، مقابل
+                                        الثانوية الفنية، شارع الوادي</div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex align-items-center bg-dark rounded-3 p-3" style="gap:15px;">
+                                <span class="d-flex align-items-center justify-content-center rounded-circle"
+                                    style="background:#f2c22820; width:48px; height:48px;">
+                                    <i class="fas fa-envelope" style="color:#f2c228; font-size:1.5rem;"></i>
+                                </span>
+                                <div>
+                                    <div style="color:#f2c228; font-weight:600;">البريد الإلكتروني</div>
+                                    <div style="color:#e0e0e0; font-size:0.97rem;">info@watanclub.ly</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 ">
+                                <div class="text-center mt-auto">
+                                    <div class="mb-2" style="color:#f2c228; font-weight:600;">تابعنا على</div>
+                                    <div class="d-flex justify-content-center gap-3 mb-2">
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center rounded-circle"
+                                            style="background:#222; width:38px; height:38px; color:#f2c228; font-size:1.3rem; transition:background .2s;">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center rounded-circle"
+                                            style="background:#222; width:38px; height:38px; color:#f2c228; font-size:1.3rem; transition:background .2s;">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="d-flex align-items-center justify-content-center rounded-circle"
+                                            style="background:#222; width:38px; height:38px; color:#f2c228; font-size:1.3rem; transition:background .2s;">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

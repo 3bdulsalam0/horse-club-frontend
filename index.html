@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي الوطن للفروسية</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+       integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- مكتبة Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation + Hero -->
+    <header class="nav-hero-container">
+        <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="نادي الوطن" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="competitionList.html">قائمة المسابقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#races">عن نادي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">أنشطة ومهرجانات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleLanguage()">EN</a>
+                        </li>
+                    </ul>
+                    <div class="nav-icons">
+                        <a href="#" class="btn btn-warning text-white me-3" style="font-size: 12px;">
+                            تسجيل في المهرجان
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-md-6">
+                        <h1 class="display-4 fw-bold text-white">نادي الوطن للرماية والفروسيةومسابقات الخيل في ليبيا
+                        </h1>
+                        <p class="lead text-white">نقدم لكم تجربة فريدة في عالم الفروسية والسباقات</p>
+                        <div class="d-flex gap-2">
+                            <a href="registration.html" class="btn btn-warning flex-grow-1 me-2"
+                                style="color: white;font-family: 'Cairo', sans-serif;">سجل الآن</a>
+                            <a href="competitionList.html" class="btn btn-outline-light"> قائمة السباقات</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/logo.png" alt="فروسية"
+                            class="img-fluid animate__animated animate__pulse slow-flip">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="competitions" class="competitions-section">
+            <div class="competitions-bg"></div>
+            <div class="container pt-4 pb-2" style="position: relative; overflow: hidden;">
+                <div class="competitions-slider">
+                    <!-- مثال كارد مسابقة -->
+                    <div class="competition-card"
+                        style="background-image: url('images/competition/competition-4jpg.jpg');">
+                        <div class="competition-overlay">
+                            <h3 class="competition-title">بطولة الوطن الصيفية</h3>
+                            <div class="competition-dates">
+                                <span>من <b>2025-07-01</b></span>
+                                <span>إلى <b>2025-07-07</b></span>
+                            </div>
+                            <div class="competition-meta">
+                                <span>عدد الجياد المسجلة: <b>24</b></span>
+                            </div>
+                            <a href="#" class="btn btn-primary competition-register">تسجيل</a>
+                        </div>
+                    </div>
+                    <!-- كرر الكارد لمسابقات أخرى -->
+                    <div class="competition-card"
+                        style="background-image: url('images/competition/competition-3.jpg');">
+                        <div class="competition-overlay">
+                            <h3 class="competition-title">كأس الفروسية للشباب</h3>
+                            <div class="competition-dates">
+                                <span>من <b>2025-08-15</b></span>
+                                <span>إلى <b>2025-08-20</b></span>
+                            </div>
+                            <div class="competition-meta">
+                                <span>عدد الجياد المسجلة: <b>32</b></span>
+                            </div>
+                            <a href="#" class="btn btn-primary competition-register">تسجيل</a>
+                        </div>
+                    </div>
+                    <!-- ... -->
+                    <div class="competition-card"
+                        style="background-image: url('images/competition/competition-2.jpg');">
+                        <div class="competition-overlay">
+                            <h3 class="competition-title">كأس الفروسية للشباب</h3>
+                            <div class="competition-dates">
+                                <span>من <b>2025-08-15</b></span>
+                                <span>إلى <b>2025-08-20</b></span>
+                            </div>
+                            <div class="competition-meta">
+                                <span>عدد الجياد المسجلة: <b>32</b></span>
+                            </div>
+                            <a href="#" class="btn btn-primary competition-register">تسجيل</a>
+                        </div>
+                    </div>
+                    <div class="competition-card"
+                        style="background-image: url('images/competition/competition-1.jpg');">
+                        <div class="competition-overlay">
+                            <h3 class="competition-title">كأس الفروسية للشباب</h3>
+                            <div class="competition-info-row">
+                                <div class="competition-dates">
+                                    <span>من <b>2025-08-15</b></span>
+                                    <span>إلى <b>2025-08-20</b></span>
+                                </div>
+                                <div class="competition-meta">
+                                    <span>عدد الجياد المسجلة: <b>32</b></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary competition-register">تسجيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-modern" class="about-modern-section">
+            <div class="about-modern-bg"></div>
+            <div class="container pt-4 pb-2" style="position: relative; overflow: hidden;">
+                <div class="about-cards-slider">
+                    <div class="about-card" style="background-image: url('images/1 (1).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>تاريخ النادي</h3>
+                            <p>تأسس نادي الوطن عام 1990 ليكون منارة للفروسية في ليبيا، ويجمع بين الأصالة والتطور.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (2).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>رسالتنا</h3>
+                            <p>نشر ثقافة الفروسية وتعزيز القيم الرياضية والاجتماعية بين الشباب والمجتمع.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (3).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>المدربين</h3>
+                            <p>نخبة من أفضل المدربين ذوي الخبرة لتطوير مهارات الفرسان من جميع الأعمار.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (4).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>الخدمات</h3>
+                            <p>نوفر خدمات تدريب، مسابقات، ورعاية الخيول بأحدث الأساليب والمعايير.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (5).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>السباقات</h3>
+                            <p>تنظيم سباقات محلية ودولية بمشاركة نخبة من أفضل الفرسان والخيول.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (6).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>الأنشطة</h3>
+                            <p>فعاليات ومهرجانات ترفيهية وثقافية لتعزيز التواصل بين أعضاء النادي والمجتمع.</p>
+                        </div>
+                    </div>
+                    <div class="about-card" style="background-image: url('images/1 (7).jpg');">
+                        <div class="about-card-overlay">
+                            <h3>انضم إلينا</h3>
+                            <p>كن جزءًا من عائلة نادي الوطن للفروسية وتمتع بتجربة فريدة ومميزة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-watan" class="about-watan-section" style="position:relative;overflow:hidden;">
+            <div id="particles-js"></div>
+            <div class="container watan-flex" style="position:relative; z-index:1;">
+                <div class="watan-text">
+                    <h2>عن نادي الوطن للفروسية</h2>
+                    <hr class="watan-underline">
+                    <p>
+                        نادي الوطن للفروسية هو وجهتك المثالية لمحبي الخيل والفروسية. نسعى لتقديم أفضل تجربة تدريبية
+                        وترفيهية لجميع الأعمار والمستويات، مع مدربين محترفين ومرافق حديثة.
+                    </p>
+                    <ul>
+                        <li>تدريب احترافي لجميع المستويات</li>
+                        <li>مرافق متطورة ومسارات مخصصة</li>
+                        <li>فعاليات ومسابقات دورية</li>
+                    </ul>
+                </div>
+                <div class="watan-img">
+                    <img src="images/1 (1).jpg" alt="نادي الوطن للفروسية">
+                </div>
+            </div>
+        </section>
+        <section id="join-now" class="join-now-section">
+            <div class="join-bg">
+                <!-- <img src="images/img3.jpg" alt="خلفية انضم إلينا" /> -->
+            </div>
+            <div class="container join-content">
+                <div class="join-images">
+                    <img class="main-img" src="images/1 (2).jpg" alt="عضوية نادي الوطن" />
+                    <img class="img-top" src="images/1 (3).jpg" alt="ميزة 1" />
+                    <img class="img-bottom" src="images/1 (4).jpg" alt="ميزة 2" />
+                    <img class="img-side" src="images/1 (5).jpg" alt="ميزة 3" />
+                </div>
+                <div class="join-info">
+                    <div class="join-card">
+                        <h3>انضم إلينا الآن</h3>
+                        <hr>
+                        <ul>
+                            <li>دخول حصري للفعاليات والمسابقات</li>
+                            <li>تدريب احترافي مع مدربين معتمدين</li>
+                            <li>خصومات على الخدمات والمنتجات</li>
+                            <li>شبكة علاقات واسعة مع محبي الفروسية</li>
+                        </ul>
+                        <a href="#membership" class="btn btn-primary">احصل على عضويتك</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-modern">
+        <div class="container py-5">
+            <div class="row g-4 align-items-start">
+                <!-- سجل معنا -->
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-heading">سجل معنا</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">تسجيل الفروسية</a></li>
+                        <li><a href="#">تسجيل مهري</a></li>
+                        <li><a href="#">تسجيل صغير</a></li>
+                    </ul>
+                </div>
+                <!-- الدورات -->
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-heading">الدورات</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">تسجيل دورة مدربين</a></li>
+                        <li><a href="#">تسجيل دورة تحكيم</a></li>
+                    </ul>
+                </div>
+                <!-- المهرجانات -->
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-heading">المهرجانات</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">مهرجان الكرامة</a></li>
+                        <li><a href="#">كأس ليبيا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider my-4"></div>
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="نادي الوطن"
+                        style="height:48px;filter:drop-shadow(0 2px 8px #0008);">
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-copy" style="color:#aaa;">
+                    &copy; 2025 نادي الوطن للفروسية. جميع الحقوق محفوظة.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="إلى الأعلى" class="scroll-progress-btn">
+        <svg class="progress-ring" width="56" height="56">
+            <circle class="progress-ring__circle" stroke="#f2c228" stroke-width="4" fill="transparent" r="24" cx="28"
+                cy="28" />
+        </svg>
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html
