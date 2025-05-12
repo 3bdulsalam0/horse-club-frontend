@@ -115,18 +115,41 @@ main.container {
   border-color: #f2c228;
 }
 @media (max-width: 991.98px) {
+  aside.filter-col {
+    margin-bottom: 24px;
+  }
   main.container {
-    padding: 24px 6px 18px 6px;
+    padding: 18px 4px 12px 4px;
   }
 }
 @media (max-width: 768px) {
   .competition-img-wrap {
-    height: 140px;
+    height: 120px;
   }
-  .competition-card-pro {
-    min-height: 0;
+  .competition-title-pro {
+    font-size: 1.02rem;
   }
+  .competition-card-body {
+    padding: 10px 8px 10px 8px;
+  }
+  .btn-outline-warning {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+  .filter-card {
+    padding: 14px 6px;
+    font-size: 0.97rem;
+  }
+  .filter-card .form-label {
+    font-size: 0.97rem;
+  }
+  main.container {
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+  }
+
 }
+
   </style>
 </head>
 <body>
@@ -176,7 +199,7 @@ main.container {
   <main class="container " style="margin-top: 122px;">
     <div class="row g-4">
       <!-- الفلتر على اليمين -->
-      <aside class="col-12 col-md-3">
+      <aside class="col-12 col-md-3 filter-col">
         <div class="filter-card">
           <h5 class="mb-3" style="color:#f2c228;"><i class="fas fa-filter"></i> فلترة النتائج</h5>
           <form>

@@ -724,10 +724,11 @@ body {
 }
 
 .join-images .main-img {
-    width: 320px;
-    height: 420px;
+    width: 400px;
+    height: 726px;
     border-radius: 16px;
     box-shadow: 0 8px 36px rgba(0,0,0,0.22);
+    background:  center center/cover;
     position: relative;
     z-index: 2;
     object-fit: cover;
@@ -1291,4 +1292,281 @@ body {
     margin-bottom: 40px;
     background: #696a6bab;
     margin-bottom: 40px;
+  }
+
+
+  .vision-mission-cards {
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+      justify-content: center;
+      align-items: stretch;
+      margin: 40px 0 20px 0;
+      flex-wrap: wrap;
+  }
+  .vision-mission-card {
+      background: #232a39;
+      border-radius: 20px;
+      box-shadow: 0 4px 16px #0002;
+      padding: 32px 28px 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      min-width: 270px;
+      max-width: 420px;
+      flex: 1 1 320px;
+      margin-bottom: 18px;
+  }
+  .icon-circle {
+      min-width: 56px;
+      min-height: 56px;
+      max-width: 56px;
+      max-height: 56px;
+      background: #f2c228;
+      color: #232a39;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 2px 8px #0002;
+      margin-left: 10px;
+  }
+  .vision-mission-title {
+      color: #f2c228;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 2px;
+  }
+  .vision-mission-text {
+      color: #fff;
+      font-size: 1.06rem;
+      margin-bottom: 0;
+      line-height: 1.8;
+  }
+  @media (max-width: 768px) {
+      .vision-mission-cards {
+          flex-direction: column;
+          gap: 18px;
+          align-items: stretch;
+      }
+      .vision-mission-card {
+          padding: 22px 14px 16px 14px;
+          min-width: 0;
+          max-width: 100%;
+      }
+      .icon-circle {
+          min-width: 46px;
+          min-height: 46px;
+          font-size: 1.3rem;
+      }
+      .vision-mission-title {
+          font-size: 1.1rem;
+      }
+      .vision-mission-text {
+          font-size: 0.99rem;
+      }
+  }
+
+
+  @media (max-width: 991.98px) {
+    #about-watan .row {
+      flex-direction: column-reverse !important;
+    }
+    .watan-text, .join-images {
+      margin-bottom: 24px;
+    }
+  }
+  .join-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #0002;
+  }
+
+
+  /* سكشن تعريفي عصري لنادي الوطن */
+  .watan-hero-section {
+    position: relative;
+    background: #181c22;
+    overflow: hidden;
+    padding: 0;
+  }
+  .watan-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(30,34,40,0.87),rgba(30,34,40,0.93)), url('../images/main/main-1.jpg') center center/cover no-repeat;
+    z-index: 0;
+  }
+  .watan-hero-section .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* صورة الخيول */
+  .watan-side-image img {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 18px;
+    box-shadow: 0 8px 36px rgba(0,0,0,0.22);
+    object-fit: cover;
+  }
+  
+  /* المميزات */
+  .watan-features {
+    margin-top: 0;
+  }
+  .feature-box {
+    background: #f8f9fa26;;
+    border-radius: 16px;
+    padding: 24px 16px 18px 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 18px #0002;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 180px;
+  }
+  .feature-box:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #0005;
+  }
+  .feature-icon {
+    background: #f2c228;
+    color: #232a39;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 auto 12px auto;
+    box-shadow: 0 2px 8px #0002;
+  }
+  .feature-box h5 {
+    color: #f2c228;
+    font-size: 1.09rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .feature-box p {
+    font-size: 0.97rem;
+    color: #e5e5e5;
+    margin-bottom: 0;
+    font-family: 'Cairo';
+  }
+  
+  /* لماذا تختار النادي */
+  .why-club-box {
+    background: #232a39f2;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #0002;
+    padding: 28px 22px 22px 22px;
+    margin-bottom: 28px;
+    color: #fff;
+    position: relative;
+  }
+  .why-icon {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background: #f2c228;
+    color: #232a39;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 2px 8px #0002;
+  }
+  .why-club-box h4 {
+    color: #f2c228;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-left: 56px;
+    font-size: 1.15rem;
+  }
+  .why-club-box p {
+    margin-bottom: 0;
+    font-size: 1.02rem;
+    line-height: 2;
+  }
+  
+  /* رئيس النادي */
+  .watan-president-img img {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 16px;
+    box-shadow: 0 8px 36px rgba(0,0,0,0.22);
+    object-fit: cover;
+  }
+  .watan-president-text {
+    background: #f8f9fa26;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px #0002;
+    padding: 24px 18px 18px 18px;
+    color: #fff;
+    margin-right: 0;
+    
+  }
+  .watan-president-text h3 {
+    color: #f2c228;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .watan-president-text p {
+    font-size: 1.03rem;
+    line-height: 2;
+    margin-bottom: 0;
+    font-family: 'Cairo';
+  }
+  
+  /* ريسبونسف */
+  @media (max-width: 991.98px) {
+    .watan-hero-section .container {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    .why-club-box {
+      margin-top: 32px;
+    }
+    .watan-president-text {
+      margin-top: 24px;
+    }
+  }
+  @media (max-width: 768px) {
+    .watan-hero-section .container {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    .feature-box {
+      min-height: 120px;
+      padding: 16px 6px 12px 6px;
+    }
+    .watan-president-img img {
+      max-width: 90vw;
+    }
+    .why-club-box h4 {
+      font-size: 1rem;
+      padding-left: 48px;
+    }
+    .why-icon {
+      left: 14px;
+      top: 14px;
+      width: 32px;
+      height: 32px;
+      font-size: 1.1rem;
+    }
   }
